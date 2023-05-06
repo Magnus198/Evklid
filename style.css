@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'montserrat_400';
+    src: url('fonts/montserrat-regular.woff2') format('woff2'),
+         url('fonts/montserrat-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'montserrat_600';
     src: url('fonts/montserrat-semibold.woff2') format('woff2'),
          url('fonts/montserrat-semibold.woff') format('woff');
@@ -26,5 +35,5 @@
 }
 
 body {
-    font-family: 'montserrat_600','montserrat_700','montserrat_800';
+    font-family: 'montserrat_400','montserrat_600','montserrat_700','montserrat_800';
 }
