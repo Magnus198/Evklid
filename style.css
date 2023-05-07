@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'montserrat_400';
     src: url('fonts/montserrat-regular.woff2') format('woff2'),
-         url('fonts/montserrat-regular.woff') format('woff');
+        url('fonts/montserrat-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'montserrat_600';
     src: url('fonts/montserrat-semibold.woff2') format('woff2'),
-         url('fonts/montserrat-semibold.woff') format('woff');
+        url('fonts/montserrat-semibold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -19,7 +19,7 @@
 @font-face {
     font-family: 'montserrat_700';
     src: url('fonts/montserrat-bold.woff2') format('woff2'),
-         url('fonts/montserrat-bold.woff') format('woff');
+        url('fonts/montserrat-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,12 +28,88 @@
 @font-face {
     font-family: 'montserrat_800';
     src: url('fonts/montserrat-extrabold.woff2') format('woff2'),
-         url('fonts/montserrat-extrabold.woff') format('woff');
+        url('fonts/montserrat-extrabold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
 body {
-    font-family: 'montserrat_400','montserrat_600','montserrat_700','montserrat_800';
+    font-family: 'montserrat_400', 'montserrat_600', 'montserrat_700', 'montserrat_800';
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 100px;
+}
+
+.container {
+    width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.header-container {
+    padding-top: 14px;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-img {
+    height: 60px;
+}
+
+.logo-img1 {
+    padding-top: 15px;
+    padding-left: 9px;
+    width: 140px;
+    height: 33px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    margin-top: 22px;
+    margin-left: 542px;
+}
+
+.nav-list-element {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-list-element1 {
+    margin-left: 67px;
+}
+
+.nav-list-element2 {
+    margin-left: 69px;
+}
+
+.nav-list-element3 {
+    margin-left: 67px;
+}
+
+.nav-list-element4 {
+    margin-left: 69px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.header-img {
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    margin-left: 68px;
 }
