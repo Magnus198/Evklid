@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'montserrat_400';
-    src: url('fonts/montserrat-regular.woff2') format('woff2'),
-        url('fonts/montserrat-regular.woff') format('woff');
+    src: url('fonts/montserrat-regular.woff') format('woff'),
+        url('fonts/montserrat-regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'montserrat_600';
-    src: url('fonts/montserrat-semibold.woff2') format('woff2'),
-        url('fonts/montserrat-semibold.woff') format('woff');
+    src: url('fonts/montserrat-semibold.woff') format('woff'),
+        url('fonts/montserrat-semibold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'montserrat_700';
-    src: url('fonts/montserrat-bold.woff2') format('woff2'),
-        url('fonts/montserrat-bold.woff') format('woff');
+    src: url('fonts/montserrat-bold.woff') format('woff'),
+        url('fonts/montserrat-bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'montserrat_800';
-    src: url('fonts/montserrat-extrabold.woff2') format('woff2'),
-        url('fonts/montserrat-extrabold.woff') format('woff');
+    src: url('fonts/montserrat-extrabold.woff') format('woff'),
+        url('fonts/montserrat-extrabold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -42,6 +42,7 @@ a {
     text-decoration: none;
 }
 
+/* Header */
 .header {
     height: 100px;
 }
@@ -112,4 +113,53 @@ a {
     width: 20px;
     margin-top: 20px;
     margin-left: 68px;
+}
+
+/* Section */
+.section-container {
+    height: 570px;
+    margin-top: -17px;
+    margin-left: 2px;
+    padding-bottom: 100px;
+    font-family: 'montserrat_800';
+}
+
+.section-background {
+    width: 1415px;
+    height: 497px;
+}
+
+.section-title {
+    width: 837px;
+    margin-top: -416px;
+    margin-left: 64px;
+    color: white;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 67px;
+}
+
+.section-description {
+    position: absolute;
+    width: 650px;
+    margin-top: -20px;
+    margin-left: 64px;
+    color: white;
+    font-family: 'montserrat_700';
+    font-size: 19px;
+    line-height: 23px;
+}
+
+.section-button {
+    padding: 0;
+    padding-top: 2px;
+    color: white;
+    background-color: #FF9900;
+    border-color: #FF9900;
+    font-size: 19px;
+    font-family: 'montserrat_700';
+    height: 63px;
+    margin-top: 98px;
+    margin-left: 64px;
+    width: 225px;
 }
