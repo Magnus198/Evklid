@@ -218,3 +218,41 @@ a {
     font-family: 'montserrat_700';
     font-size: 13px;
 }
+
+.section1-group1 {
+    width: 694px;
+    height: 235px;
+    margin-top: 41px;
+    margin-left: 26px;
+    border: 1px solid #CACACA;
+}
+
+.section1-group1-img {
+    width: 154px;
+    height: 133px;
+    margin-top: 51px;
+    margin-left: 46px;
+}
+
+.section1-group1-title {
+    position: absolute;
+    width: 358px;
+    margin: 0;
+    margin-top: -135px;
+    margin-left: 240px;
+    font-family: 'montserrat_700';
+    font-size: 19px;
+}
+
+.section1-group1-description {
+    position: absolute;
+    width: 300px;
+    height: 128px;
+    margin: 0;
+    margin-top: -107px;
+    margin-left: 240px;
+    font-family: 'montserrat_400';
+    font-size: 12px;
+    line-height: 26px;
+    color: #333333;
+}
