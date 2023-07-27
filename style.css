@@ -42,6 +42,21 @@ a {
     text-decoration: none;
 }
 
+summary {
+    list-style-type: none;
+    /* Firefox */
+}
+
+summary::-webkit-details-marker {
+    display: none;
+    /* Chrome */
+}
+
+hr {
+    width: 1416px;
+    margin-left: -2px;
+}
+
 /* Header */
 .header {
     height: 100px;
@@ -269,7 +284,7 @@ a {
     width: 154px;
     height: 133px;
     margin-top: 51px;
-    margin-left: 46px;    
+    margin-left: 46px;
 }
 
 .section1-group2-title {
@@ -357,7 +372,7 @@ a {
 
 .section2-group1-description {
     width: 600px;
-    height: 320px;
+    height: 306px;
     margin: 0;
     margin-top: 8px;
     margin-left: 2px;
@@ -371,4 +386,49 @@ a {
     height: 368px;
     margin-top: 43px;
     margin-left: 120px;
+}
+
+.section2-button {
+    width: 140px;
+    height: 48px;
+    margin-left: 2px;
+    margin-top: -13px;
+    background-color: #FF9900;
+    border-color: #FF9900;
+    color: white;
+    font-family: 'montserrat_600';
+    font-size: 13px;
+}
+
+.section2-button1 {
+    width: 117px;
+    height: 37px;
+    margin-left: 22px;
+    background-color: white;
+    border-color: #333333;
+}
+
+/* Section 3 */
+.section3 {
+    padding-top: 64px;
+    padding-left: 78px;
+}
+
+.section3-title {
+    margin: 0;
+    margin-top: 14px;
+    font-family: 'montserrat_400';
+    font-size: 38px;
+}
+
+.section3-detail {
+    margin-top: 33px;
+}
+
+.section3-detail-summary {
+    margin-top: 35px;
+    margin-bottom: 22px;
+    margin-left: -1px;
+    font-size: 19px;
+    font-family: 'montserrat_700';
 }
