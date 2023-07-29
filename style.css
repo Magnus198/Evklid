@@ -432,3 +432,46 @@ hr {
     font-size: 19px;
     font-family: 'montserrat_700';
 }
+
+/* Footer */
+.footer {
+    height: 475px;
+    width: 1535px;
+    margin-top: 81px;
+    margin-left: 17px;
+    background-color: #222222;
+    display: flex;
+} 
+
+.footer-vector {
+    width: 180px;
+    height: 55px;
+    margin-top: 40px;
+    margin-left: 58px;
+}
+
+.footer-nav-list {
+    list-style: none;
+    margin-top: 19px;
+}
+
+.footer-nav-list-element {
+    width: 230px;
+    margin-left: 18px;
+    font-size: 15px;
+}
+
+.footer-nav-list-element:not(:first-child) {
+    margin-top: 12px;
+}
+
+.footer-nav-link {
+    color: #CACACA;
+    font-family: 'montserrat_600';
+}
+
+.footer-frame {
+    width: 183px;
+    margin-top: 59px;
+    margin-left: 60px;
+}
