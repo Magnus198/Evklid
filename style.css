@@ -724,8 +724,20 @@ hr {
 }
 
 @media (max-width: 576px) {
+    .section-background {
+        width: 587px;
+    }
+
+    .section-title {
+        width: 509px;
+    }
+
+    .section-description {
+        width: 513px;
+    }
+
     .section-button {
-        width: 100%;
+        width: 120%;
         font-size: 17px;
     }
 
@@ -736,8 +748,103 @@ hr {
     .section1-title {
         font-size: 32px;
     }
+    
+    .section1-description {
+        width: 577px;
+    }
+
+    .section1-img {
+        width: 563px;
+    }
+
+    .section1-img-description {
+        width: 312px;
+        font-size: 14px;
+    }
+
+    .section1-button {
+        margin-left: 366px;
+    }
+
+    .section1-group1 {
+        width: 563px;
+    }
+
+    .section1-group2 {
+        width: 563px;
+    }
+
+    .section1-group1-title {
+        width: 317px;
+        font-size: 16px;
+    }
+
+    .section1-group1-description {
+        width: 311px;
+        font-size: 15px;
+    }
+
+    .section1-group2-title {
+        width: 306px;
+        font-size: 17px;
+    }
+
+    .section1-group2-description {
+        width: 306px;
+        font-size: 17px;
+    }
+
+    .section2-group1-description {
+        width: 563px;
+        font-size: 18px;
+    }
 
     .section2-list-link {
         font-size: 18px;
+    }
+
+    hr {
+        width: 576px;
+    }
+
+    .section3-detail-summary {
+        width: 563px;
+    }
+
+    .footer {
+        width: 646px;
+    }
+
+    .centerfooter {
+        width: 241px;
+    }
+
+    .centerfooter-title {
+        font-size: 25px;
+    }
+
+    .placeholder {
+        width: 189px;
+    }
+
+    .placeholder1 {
+        width: 189px;
+    }
+
+    .placeholder2 {
+        width: 189px;
+    }
+
+    .footer-checkbox-description {
+        width: 110px;
+    }
+
+    .rightfooter {
+        width: 105px;
+    }
+
+    .rightfooter-description {
+        width: 112px;
+        font-size: 6px;
     }
 }
