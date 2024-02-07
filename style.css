@@ -43,8 +43,7 @@ a {
 }
 
 a {
-    background: linear-gradient(to right,transparent,transparent),
-    linear-gradient(to right,#FF9900,#FF9900,#FF9900);
+    background: linear-gradient(to right,transparent,transparent), linear-gradient(to right,#FF9900,#FF9900,#FF9900);
     background-size: 100% 3px, 0 3px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
@@ -52,11 +51,7 @@ a {
 }
 
 a:hover {
-    background-size: 0 3px,100% 3px ;
-}
-
-a:active {
-    color: #FF9900;
+    background-size: 0 3px, 100% 3px;
 }
 
 summary {
@@ -72,6 +67,23 @@ summary::-webkit-details-marker {
 hr {
     width: 1416px;
     margin-left: -2px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.swiper-slide {
+    width: 1415px !important;
+}
+
+.swiper-wrapper {
+    height: 500px;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center center;
 }
 
 /* Header */
@@ -165,27 +177,31 @@ hr {
 }
 
 .section-title {
+    position: absolute;
     width: 837px;
-    margin-top: -416px;
+    margin-top: -1560px;
     margin-left: 64px;
     color: white;
     font-size: 56px;
     font-weight: 800;
     line-height: 67px;
+    display: block;
 }
 
 .section-description {
     position: absolute;
     width: 650px;
-    margin-top: -20px;
+    margin-top: -1383px;
     margin-left: 64px;
     color: white;
     font-family: 'montserrat_700';
     font-size: 19px;
     line-height: 23px;
+    display: block;
 }
 
 .section-button {
+    position: absolute;
     padding: 0;
     padding-top: 2px;
     color: white;
@@ -194,9 +210,10 @@ hr {
     font-size: 19px;
     font-family: 'montserrat_700';
     height: 63px;
-    margin-top: 98px;
+    margin-top: -1266px;
     margin-left: 64px;
     width: 225px;
+    display: block;
 }
 
 /* Section1 */
@@ -409,6 +426,14 @@ hr {
     margin-left: 96px;
 }
 
+.tab-content {
+    display: none;
+}
+
+.tab-content-active {
+    display: block;
+}
+
 .section2-button {
     width: 140px;
     height: 48px;
@@ -474,7 +499,7 @@ hr {
     margin-left: 17px;
     background-color: #222222;
     display: flex;
-} 
+}
 
 .footer-vector {
     width: 180px;
@@ -605,10 +630,137 @@ hr {
 /* Other */
 .section-button:hover {
     cursor: pointer;
-    background-color: rgba(255, 153, 0, 70);;
+    background-color: #FF9900 70%;
+}
+
+.section-button:focus {
+    border: 1px solid #FF9900;
+}
+
+.section-button:active {
+    background-color: #E1670E;
+    border-color: #E1670E;
+}
+
+.nav-link:focus {
+    border-color: #FF9900;
+}
+
+.nav-link:active {
+    color: #E1670E;
+}
+
+.header-img:hover {
+    cursor: pointer;
+}
+
+.section1-button:hover {
+    background-color: #FF9900;
+}
+
+.section1-button:focus {
+    background-color: #FF9900;
+}
+
+.section1-button:active {
+    background-color: #E1670E;
+    border-color: #E1670E;
+}
+
+.section2-list-link:hover {
+    background: none;
+    color: #FF9900;
+}
+
+.section2-list-link:active {
+    color: #E1670E;
+}
+
+.section2-button:hover {
+    background-color: #F7B045;
+    border-color: #F7B045;
+}
+
+.section2-button:focus {
+    background-color: #F7B045;
+    border-color: #F7B045;
+}
+
+.section2-button:active {
+    background-color: #E1670E;
+    border-color: #E1670E;
+}
+
+.section2-button1:hover {
+    background-color: #666666;
+    border-color: #666666;
+    color: white;
+}
+
+.section2-button1:focus {
+    background-color: #666666;
+    border-color: #666666;
+    color: white;
+}
+
+.section2-button1:active {
+    background-color: #000000;
+    border-color: #000000;
+    color: white;
+}
+
+.section3-details:hover {
+    cursor: pointer;
+    color: #FF9900;
+}
+
+.section3-details:focus {
+    cursor: pointer;
+    color: #FF9900;
+}
+
+.footer-nav-link:hover {
+    background: none;
+    color: #FF9900;
+}
+
+.footer-nav-link:active {
+    color: #E1670E;
+}
+
+.placeholder:hover {
+    background-color: #666666;
+}
+
+.placeholder1:hover {
+    background-color: #666666;
+}
+
+.placeholder2:hover {
+    background-color: #666666;
+}
+
+.placeholder:active {
+    color: #ffffff;
+}
+
+.placeholder1:active {
+    color: #ffffff;
+}
+
+.placeholder2:active {
+    color: #ffffff;
+}
+
+.footer-frame:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
     .header-img {
         display: none;
     }
@@ -684,7 +836,7 @@ hr {
     }
 
     hr {
-        width: 850px;  
+        width: 850px;
     }
 
     .section3-detail-summary {
@@ -724,6 +876,10 @@ hr {
 }
 
 @media (max-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+
     .section-background {
         width: 587px;
     }
@@ -748,7 +904,7 @@ hr {
     .section1-title {
         font-size: 32px;
     }
-    
+
     .section1-description {
         width: 577px;
     }

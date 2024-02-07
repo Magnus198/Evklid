@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>Evklid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -48,24 +51,45 @@
             </nav>
             <img class="header-img" src="img/search header.png" alt="search">
             <button class="burger">
-                <img src="img/burger.png" alt="burger">
+                <img src="img/burger.png" alt="burger" class="burger">
             </button>
         </div>
     </header>
     <main>
         <section class="section">
-            <div class="container section-container">
-                <img class="section-background" src="img/background.jpg" alt="background">
-                <h1 class="section-title">
-                    Проектные решения любой сложности
-                </h1>
-                <p class="section-description">
-                    Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
-                    проектантов
-                </p>
-                <button class="section-button">
-                    Заказать расчёт
-                </button>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="container section-container">
+                        <div class="section-background swiper-slide" style="background-image: url(/img/background.jpg)">
+                        </div>
+                        <div class="section-background swiper-slide"
+                            style="background-image: url(/img/background1.jpg)"></div>
+                        <div class="section-background swiper-slide"
+                            style="background-image: url(/img/background2.jpg)"></div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                        <h1 class="section-title">
+                            Проектные решения любой сложности
+                        </h1>
+                        <p class="section-description">
+                            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются
+                            уделом
+                            проектантов
+                        </p>
+                        <button class="section-button">
+                            Заказать расчёт
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section1">
@@ -128,29 +152,29 @@
                     <nav class="section2-nav">
                         <ul class="section2-nav-list">
                             <li class="section2-list-element">
-                                <a class="section2-list-link" href="#">
+                                <a class="section2-list-link" data-path="one" href="">
                                     1 шаг
                                 </a>
                             </li>
                             <li class="section2-list-element1">
-                                <a class="section2-list-link" href="#">
+                                <a class="section2-list-link" data-path="two" href="">
                                     2 шаг
                                 </a>
                             </li>
                             <li class="section2-list-element2">
-                                <a class="section2-list-link" href="#">
+                                <a class="section2-list-link" data-path="three" href="">
                                     3 шаг
                                 </a>
                             </li>
                             <li class="section2-list-element3">
-                                <a class="section2-list-link" href="#">
+                                <a class="section2-list-link" data-path="four" href="">
                                     4 шаг
                                 </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="section2-group1">
+                <div class="section2-group1" data-target="one">
                     <div>
                         <h3 class="section2-group1-title">
                             Проводим консультацию
@@ -178,6 +202,25 @@
                     </div>
                     <img class="section2-img" src="img/Rectangle1.jpg" alt="rectangle1">
                 </div>
+                <!-- <div class="tab-content tab-content-active" data-target="two">
+                    <div class="tab-content_item">
+                        <div class="tab-content_left">
+                            <h2 class="tab-title">Test Tab</h2>
+                            <p class="tab-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, optio modi! Repellat
+                                necessitatibus facere tempora obcaecati incidunt itaque facilis consequatur? Explicabo
+                                eius nemo impedit totam error sunt cupiditate saepe quisquam?
+                            </p>
+                            <div class="tab_btns">
+                                <button class="section2-button">Подробнее</button>
+                                <button class="section2-button1">Договор</button>
+                            </div>
+                            <img class="section2-img" src="img/Rectangle1.jpg" alt="rectangle1">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content tab-content-active" data-target="three">3</div>
+                <div class="tab-content tab-content-active" data-target="four">4</div> -->
             </div>
         </section>
         <section class="section3">
@@ -230,7 +273,7 @@
                             представляют собой яркий пример континентально-европейского типа политической культуры,
                             будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные
                             признаки победы институционализации призывают нас к новым свершениям, которые, в свою
-                            очередь, должны быть указаны как претенденты на роль ключевых факторов. 
+                            очередь, должны быть указаны как претенденты на роль ключевых факторов.
 
                             Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть
                             призваны к ответу. Явные признаки победы институционализации набирают популярность среди
@@ -315,65 +358,90 @@
         </section>
     </main>
     <footer class="footer">
-            <div class="leftfooter">
-                <img src="img/vector footer.png" alt="vector2" class="footer-vector">
-                <nav class="footer-nav">
-                    <ul class="footer-nav-list">
-                        <li class="footer-nav-list-element">
-                            <a href="#" class="footer-nav-link">О нас</a>
-                        </li>
-                        <li class="footer-nav-list-element">
-                            <a href="#" class="footer-nav-link">Проекты</a>
-                        </li>
-                        <li class="footer-nav-list-element">
-                            <a href="#" class="footer-nav-link">Отзывы</a>
-                        </li>
-                        <li class="footer-nav-list-element">
-                            <a href="#" class="footer-nav-link">Договор оферты</a>
-                        </li>
-                        <li class="footer-nav-list-element">
-                            <a href="#" class="footer-nav-link">Договор подряда</a>
-                        </li>
-                        <li class="footer-nav-list-element">
-                            <a href="#" class="footer-nav-link">Конфиденциальность</a>
-                        </li>
-                        <li class="footer-nav-list-element">
-                            <a href="#" class="footer-nav-link">Партнёрское соглашение</a>
-                        </li>
-                    </ul>
-                </nav>
-                <img src="img/Frame2.png" alt="frame2" class="footer-frame">
+        <div class="leftfooter">
+            <img src="img/vector footer.png" alt="vector2" class="footer-vector">
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-element">
+                        <a href="#" class="footer-nav-link">О нас</a>
+                    </li>
+                    <li class="footer-nav-list-element">
+                        <a href="#" class="footer-nav-link">Проекты</a>
+                    </li>
+                    <li class="footer-nav-list-element">
+                        <a href="#" class="footer-nav-link">Отзывы</a>
+                    </li>
+                    <li class="footer-nav-list-element">
+                        <a href="#" class="footer-nav-link">Договор оферты</a>
+                    </li>
+                    <li class="footer-nav-list-element">
+                        <a href="#" class="footer-nav-link">Договор подряда</a>
+                    </li>
+                    <li class="footer-nav-list-element">
+                        <a href="#" class="footer-nav-link">Конфиденциальность</a>
+                    </li>
+                    <li class="footer-nav-list-element">
+                        <a href="#" class="footer-nav-link">Партнёрское соглашение</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="img/Frame2.png" alt="frame2" class="footer-frame">
+        </div>
+        <div class="centerfooter">
+            <h3 class="centerfooter-title">
+                Оставить заявку
+            </h3>
+            <div class="footer-registration">
+                <input type="text" placeholder="Фамилия, имя и отчество*" class="placeholder">
+                <input type="text" placeholder="E-mail*" class="placeholder1">
+                <input type="text" placeholder="Сообщение" class="placeholder2">
             </div>
-            <div class="centerfooter">
-                <h3 class="centerfooter-title">
-                    Оставить заявку
-                </h3>
-                <div class="footer-registration">
-                    <input type="text" placeholder="Фамилия, имя и отчество*" class="placeholder">
-                    <input type="text" placeholder="E-mail*" class="placeholder1">
-                    <input type="text" placeholder="Сообщение" class="placeholder2">
+            <div class="footer-group">
+                <button class="footer-button">
+                    Отправить данные
+                </button>
+                <div class="footer-group1">
+                    <input type="checkbox" class="footer-checkbox">
+                    <p class="footer-checkbox-description">
+                        Согласен на обработку данных
+                    </p>
                 </div>
-                <div class="footer-group">
-                    <button class="footer-button">
-                        Отправить данные
-                    </button>
-                    <div class="footer-group1">
-                        <input type="checkbox" class="footer-checkbox">
-                        <p class="footer-checkbox-description">
-                            Согласен на обработку данных
-                        </p>
-                    </div>
-                </div>
             </div>
-            <div class="rightfooter">
-                <p class="rightfooter-description">
-                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
-                    факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели
-                    развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов)
-                    участие в формировании стандартных подходов.
-                </p>
-            </div>
+        </div>
+        <div class="rightfooter">
+            <p class="rightfooter-description">
+                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели
+                развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов)
+                участие в формировании стандартных подходов.
+            </p>
+        </div>
     </footer>
-</body>
 
-</html>
+    <script src="js/tabs.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body >
+
+</html >
