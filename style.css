@@ -635,6 +635,7 @@ button {
 
 .section-button:focus {
     border: 1px solid #FF9900;
+    outline: 2px solid #FF9900;
 }
 
 .section-button:active {
@@ -643,11 +644,12 @@ button {
 }
 
 .nav-link:focus {
-    border-color: #FF9900;
+    outline: 2px solid #FF9900;
 }
 
 .nav-link:active {
     color: #E1670E;
+    outline: none;
 }
 
 .header-img:hover {
@@ -660,11 +662,16 @@ button {
 
 .section1-button:focus {
     background-color: #FF9900;
+    outline: 2px solid #FF9900;
 }
 
 .section1-button:active {
     background-color: #E1670E;
     border-color: #E1670E;
+}
+
+.section2-list-link:FOCUS {
+    outline: 2px solid #FF9900;
 }
 
 .section2-list-link:hover {
@@ -684,6 +691,7 @@ button {
 .section2-button:focus {
     background-color: #F7B045;
     border-color: #F7B045;
+    outline: 2px solid #F7B045;
 }
 
 .section2-button:active {
@@ -701,6 +709,7 @@ button {
     background-color: #666666;
     border-color: #666666;
     color: white;
+    outline: 2px solid #666666;
 }
 
 .section2-button1:active {
@@ -719,6 +728,20 @@ button {
     color: #FF9900;
 }
 
+.section3-details:active {
+    cursor: pointer;
+    color: #333333;
+}
+
+.section3-detail-summary:focus {
+    outline: none;
+    color: #FF9900;
+}
+
+.footer-nav-link:focus {
+    outline: 2px solid #FF9900;
+}
+
 .footer-nav-link:hover {
     background: none;
     color: #FF9900;
@@ -726,6 +749,19 @@ button {
 
 .footer-nav-link:active {
     color: #E1670E;
+    outline: none;
+}
+
+.placeholder:focus {
+    outline: 2px solid #666666;
+}
+
+.placeholder1:focus {
+    outline: 2px solid #666666;
+}
+
+.placeholder2:focus {
+    outline: 2px solid #666666;
 }
 
 .placeholder:hover {
@@ -754,6 +790,10 @@ button {
 
 .footer-frame:hover {
     cursor: pointer;
+}
+
+.footer-button:focus {
+    outline: 2px solid #FF9900;
 }
 
 @media (max-width: 768px) {
