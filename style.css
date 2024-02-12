@@ -926,15 +926,18 @@ button {
     }
 
     .section-title {
-        width: 509px;
+        margin-top: -1495px;
+        font-size: 27px;
+        width: 400px;
     }
 
     .section-description {
-        width: 513px;
+        width: 372px;
+        margin-top: -1363px;
     }
 
     .section-button {
-        width: 120%;
+        width: 77%;
         font-size: 17px;
     }
 
@@ -947,53 +950,69 @@ button {
     }
 
     .section1-description {
-        width: 577px;
+        width: 433px;
     }
 
     .section1-img {
-        width: 563px;
+        width: 435px;
     }
 
     .section1-img-description {
-        width: 312px;
+        width: 265px;
         font-size: 14px;
+        margin-top: -138px;
+        margin-left: 12px;
     }
 
     .section1-button {
-        margin-left: 366px;
+        margin-left: 269px;
     }
 
     .section1-group1 {
-        width: 563px;
+        width: 439px;
+    }
+
+    .section1-group1-img {
+        margin-left: 0;
     }
 
     .section1-group2 {
-        width: 563px;
+        width: 439px;
     }
 
     .section1-group1-title {
-        width: 317px;
-        font-size: 16px;
+        width: 210px;
+        font-size: 19px;
+        margin-top: -163px;
     }
 
     .section1-group1-description {
-        width: 311px;
-        font-size: 15px;
+        width: 185px;
+        font-size: 11px;
+    }
+
+    .section1-group2-img {
+        margin-left: 0;
     }
 
     .section1-group2-title {
-        width: 306px;
-        font-size: 17px;
+        width: 210px;
+        font-size: 19px;
+        margin-top: -176px;
     }
 
     .section1-group2-description {
-        width: 306px;
-        font-size: 17px;
+        width: 185px;
+        font-size: 10px;
     }
 
     .section2-group1-description {
-        width: 563px;
-        font-size: 18px;
+        width: 448px;
+        font-size: 15px;
+    }
+
+    .section2-button {
+        margin-top: 34px;
     }
 
     .section2-list-link {
@@ -1001,15 +1020,22 @@ button {
     }
 
     hr {
-        width: 576px;
+        width: 419px;
+    }
+
+    .section3-container {
+        margin-left: -68px;
     }
 
     .section3-detail-summary {
-        width: 563px;
+        width: 419px;
     }
 
     .footer {
-        width: 646px;
+        width: 500px;
+        margin-left: 0;
+        display: block;
+        height: 1283px;
     }
 
     .centerfooter {
@@ -1041,7 +1067,7 @@ button {
     }
 
     .rightfooter-description {
-        width: 112px;
-        font-size: 6px;
+        width: 500px;
+        font-size: 24px;
     }
 }
