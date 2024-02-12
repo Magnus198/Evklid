@@ -799,6 +799,7 @@ button {
 @media (max-width: 768px) {
     .container {
         max-width: 768px;
+        padding-left: 0;
     }
 
     .header-img {
